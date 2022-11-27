@@ -2,32 +2,20 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5aF8UseC5I9":
+      case "5rOyoyPErWD":
         Script1();
         break;
-      case "6Ej1kkQrqzw":
+      case "64mNylFirew":
         Script2();
         break;
-      case "6I3mZ3WS1d3":
+      case "5llkY1qb05j":
         Script3();
         break;
-      case "6EdUt43NVwE":
+      case "6XteioYY5yN":
         Script4();
         break;
-      case "5naTflRl8dF":
+      case "6iz9pOxJ5Nu":
         Script5();
-        break;
-      case "5hkew9sp0Z4":
-        Script6();
-        break;
-      case "5VBCAZWRDnj":
-        Script7();
-        break;
-      case "5sIgl5L21mW":
-        Script8();
-        break;
-      case "6n0CVLOlwch":
-        Script9();
         break;
   }
 }
@@ -57,30 +45,6 @@ function Script4()
 }
 
 function Script5()
-{
-  Listen();
-
-
-}
-
-function Script6()
-{
-  // Say();
-}
-
-function Script7()
-{
-  Listen();
-English();
-
-}
-
-function Script8()
-{
-  Say();
-}
-
-function Script9()
 {
   // iSL1 to load eJS1 my_functions.js during project start (a simlar iSL2 loads eJS2)
 // SL Trigger to call External JS file called my_functions.js
