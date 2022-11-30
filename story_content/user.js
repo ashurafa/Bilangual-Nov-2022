@@ -2,20 +2,26 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "6ofKYUcRW6u":
+      case "69EaHFd0Xcp":
         Script1();
         break;
-      case "6La9J5HHBFM":
+      case "62iBRlcps9v":
         Script2();
         break;
-      case "5saTGMvbvzd":
+      case "6kZ1t423T2B":
         Script3();
         break;
-      case "5jbLnb82JOk":
+      case "5ziSnYoDB63":
         Script4();
         break;
-      case "5q7dWAkxJPH":
+      case "6NxJlkq9gVy":
         Script5();
+        break;
+      case "6iSeCnV2bMi":
+        Script6();
+        break;
+      case "5Xk7BFHvOi8":
+        Script7();
         break;
   }
 }
@@ -34,17 +40,49 @@ function Script2()
 
 function Script3()
 {
-  Listen();
-English();
+  // getting variables from SL for the dimenssions scaleX and scaleY. Both scaleX and scaleY are SL numeric variables.
+
+let player = GetPlayer();
+
+// connecting SL's object  to gsap through accessiblity text
+
+var QBox = document.querySelector("[data-acc-text='QBox']");
+
+// applying gsap animation functions ob the object
+
+gsap.to( QBox , { duration:1.0, scale: 1.1, ease: "elastic.out(1.5, 0.15)" });
 
 }
 
 function Script4()
 {
-  Say();
+  Listen();
+English();
+
 }
 
 function Script5()
+{
+  Say();
+}
+
+function Script6()
+{
+  // getting variables from SL for the dimenssions scaleX and scaleY. Both scaleX and scaleY are SL numeric variables.
+
+let player = GetPlayer();
+
+// connecting SL's object  to gsap through accessiblity text
+
+var QBox = document.querySelector("[data-acc-text='QBox']");
+
+// applying gsap animation functions ob the object
+
+gsap.to( QBox , { duration:1.0, scale: 1.1, ease: "elastic.out(1.5, 0.15)" });
+
+}
+
+function Script7()
 {
   // iSL1 to load eJS1 my_functions.js during project start (a simlar iSL2 loads eJS2)
 // SL Trigger to call External JS file called my_functions.js
