@@ -2,37 +2,37 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5b4t6LfMDwJ":
+      case "6ncSrxzhl01":
         Script1();
         break;
-      case "5uFIg2UB9wi":
+      case "62zqoqafm3w":
         Script2();
         break;
-      case "6QtmSy0wjQu":
+      case "6lN5aJASq7u":
         Script3();
         break;
-      case "6NdeOHfZtZ1":
+      case "6dG0UKxA83U":
         Script4();
         break;
-      case "6IzhdOXJa8G":
+      case "6FH5z6sGyDc":
         Script5();
         break;
-      case "6MVNx8fO1eK":
+      case "5eL1S3tvnU1":
         Script6();
         break;
-      case "6PHIIYhC69o":
+      case "6Vo1Fo3lVq8":
         Script7();
         break;
-      case "61ghCJZ4K1N":
+      case "5gfdVuKmE7M":
         Script8();
         break;
-      case "6gkQRblhAm4":
+      case "6at51qfZMFV":
         Script9();
         break;
-      case "5o1XuSY4adw":
+      case "6fRqtFqdBI6":
         Script10();
         break;
-      case "6TPisVrb6vV":
+      case "6gMtEkYL2I9":
         Script11();
         break;
   }
@@ -69,14 +69,15 @@ gsap.to( QBox , { duration:1.0, scale: 1.1, ease: "elastic.out(1.5, 0.15)" });
 function Script4()
 {
   // Tranfer the SL word to the Google Sheet (https://docs.google.com/spreadsheets/d/1UXND96QQ9Gey5qSGB05MzezJhjXw6tgNwF0YG1RCgG4/edit#gid=0)
-
  
 
- // Replace this URL with your Web App URL
+// Replace this URL with your Web App URL
 const url = "https://script.google.com/macros/s/AKfycbwGFf464IxSkI6Yo2j6mGuHmRwOF1he3ipp6DzfDheUCPslAnm5YIIhLa1MahWlTLN5wQ/exec";
 const player = GetPlayer();
-var Word = player.GetVar("WordA"); // Replace "UserFeedback" with your Storyline Variable.
-var Collected = Word + " ⓪";
+var WordA = player.GetVar("WordA"); // Replace "UserFeedback" with your Storyline Variable.
+var WordQ = player.GetVar("WordQ"); 
+
+var Collected = WordA + "  " + WordQ +" ⓪";
 
 fetch(url,{
   method: 'POST',
@@ -97,8 +98,10 @@ function Script5()
 // Replace this URL with your Web App URL
 const url = "https://script.google.com/macros/s/AKfycbwGFf464IxSkI6Yo2j6mGuHmRwOF1he3ipp6DzfDheUCPslAnm5YIIhLa1MahWlTLN5wQ/exec";
 const player = GetPlayer();
-var Word = player.GetVar("WordA"); // Replace "UserFeedback" with your Storyline Variable.
-var Collected = Word + " ①";
+var WordA = player.GetVar("WordA"); // Replace "UserFeedback" with your Storyline Variable.
+var WordQ = player.GetVar("WordQ"); 
+
+var Collected = WordA + "  " + WordQ +" ①";
 
 fetch(url,{
   method: 'POST',
@@ -141,14 +144,15 @@ gsap.to( QBox , { duration:1.0, scale: 1.1, ease: "elastic.out(1.5, 0.15)" });
 function Script9()
 {
   // Tranfer the SL word to the Google Sheet (https://docs.google.com/spreadsheets/d/1UXND96QQ9Gey5qSGB05MzezJhjXw6tgNwF0YG1RCgG4/edit#gid=0)
-
  
 
- // Replace this URL with your Web App URL
+// Replace this URL with your Web App URL
 const url = "https://script.google.com/macros/s/AKfycbwGFf464IxSkI6Yo2j6mGuHmRwOF1he3ipp6DzfDheUCPslAnm5YIIhLa1MahWlTLN5wQ/exec";
 const player = GetPlayer();
-var Word = player.GetVar("WordA"); // Replace "UserFeedback" with your Storyline Variable.
-var Collected = Word + " ⓪";
+var WordA = player.GetVar("WordA"); // Replace "UserFeedback" with your Storyline Variable.
+var WordQ = player.GetVar("WordQ"); 
+
+var Collected = WordA + "  " + WordQ +" ⓪";
 
 fetch(url,{
   method: 'POST',
@@ -169,8 +173,10 @@ function Script10()
 // Replace this URL with your Web App URL
 const url = "https://script.google.com/macros/s/AKfycbwGFf464IxSkI6Yo2j6mGuHmRwOF1he3ipp6DzfDheUCPslAnm5YIIhLa1MahWlTLN5wQ/exec";
 const player = GetPlayer();
-var Word = player.GetVar("WordA"); // Replace "UserFeedback" with your Storyline Variable.
-var Collected = Word + " ①";
+var WordA = player.GetVar("WordA"); // Replace "UserFeedback" with your Storyline Variable.
+var WordQ = player.GetVar("WordQ"); 
+
+var Collected = WordA + "  " + WordQ +" ①";
 
 fetch(url,{
   method: 'POST',
