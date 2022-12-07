@@ -2,47 +2,53 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5W64Q5TtZDB":
+      case "63Z06dgNaon":
         Script1();
         break;
-      case "5dQrjAf242B":
+      case "5kDtJZ47bb8":
         Script2();
         break;
-      case "5rhZZcR4dBL":
+      case "6R4rzIcCTHx":
         Script3();
         break;
-      case "6btrOXzwRee":
+      case "6Rfk5zI2yGd":
         Script4();
         break;
-      case "6TWWp8MeuWw":
+      case "5nzG36MsfHM":
         Script5();
         break;
-      case "62TSyl6eA5G":
+      case "6YjtSafUYRY":
         Script6();
         break;
-      case "5YcyBSshmeb":
+      case "6hHpCYcqlCW":
         Script7();
         break;
-      case "6RWsBD4AoW4":
+      case "6IYae9oxa4i":
         Script8();
         break;
-      case "65BNjNXwx12":
+      case "6ScYaDrgoKd":
         Script9();
         break;
-      case "5xj4yhqRv3I":
+      case "6gaBlpFvrAv":
         Script10();
         break;
-      case "6dzTQ3dAIFD":
+      case "6CnzciO7UTz":
         Script11();
         break;
-      case "67a7CV6OQ1Z":
+      case "6Lxk9w4KJXo":
         Script12();
         break;
-      case "6P072hxtobd":
+      case "6kFvzJ5CbaD":
         Script13();
         break;
-      case "6II9amcN4Mh":
+      case "6RbxKCNvkmW":
         Script14();
+        break;
+      case "6lUSefeYG5a":
+        Script15();
+        break;
+      case "5tOyefulTvI":
+        Script16();
         break;
   }
 }
@@ -77,6 +83,11 @@ gsap.to( QBox , { duration:1.0, scale: 1.1, ease: "elastic.out(1.5, 0.15)" });
 
 function Script4()
 {
+  // Say();
+}
+
+function Script5()
+{
   // Tranfer the SL word to the Google Sheet (https://docs.google.com/spreadsheets/d/1UXND96QQ9Gey5qSGB05MzezJhjXw6tgNwF0YG1RCgG4/edit#gid=0)
  
 
@@ -98,7 +109,7 @@ fetch(url,{
 });
 }
 
-function Script5()
+function Script6()
 {
   // Tranfer the SL word to the Google Sheet (https://docs.google.com/spreadsheets/d/1UXND96QQ9Gey5qSGB05MzezJhjXw6tgNwF0YG1RCgG4/edit#gid=0)
 
@@ -122,19 +133,19 @@ fetch(url,{
 });
 }
 
-function Script6()
+function Script7()
 {
   Listen();
 English();
 
 }
 
-function Script7()
+function Script8()
 {
   Say();
 }
 
-function Script8()
+function Script9()
 {
   // getting variables from SL for the dimenssions scaleX and scaleY. Both scaleX and scaleY are SL numeric variables.
 
@@ -150,7 +161,12 @@ gsap.to( QBox , { duration:1.0, scale: 1.1, ease: "elastic.out(1.5, 0.15)" });
 
 }
 
-function Script9()
+function Script10()
+{
+  Say();
+}
+
+function Script11()
 {
   // Tranfer the SL word to the Google Sheet (https://docs.google.com/spreadsheets/d/1UXND96QQ9Gey5qSGB05MzezJhjXw6tgNwF0YG1RCgG4/edit#gid=0)
  
@@ -173,7 +189,7 @@ fetch(url,{
 });
 }
 
-function Script10()
+function Script12()
 {
   // Tranfer the SL word to the Google Sheet (https://docs.google.com/spreadsheets/d/1UXND96QQ9Gey5qSGB05MzezJhjXw6tgNwF0YG1RCgG4/edit#gid=0)
 
@@ -197,65 +213,65 @@ fetch(url,{
 });
 }
 
-function Script11()
-{
-  // iSL1 to load eJS1 my_functions.js during project start (a simlar iSL2 loads eJS2)
-// SL Trigger to call External JS file called my_functions.js
-// Initially this js file is in the developer folde for the project under resources.
-// To link the js to SL, use Web Object insert pointing out to ....
-// Then publish the project to create the Contents 
-// After that adjust the path of the newly copied js file in the below line
-
- // alert("Slide 1");
-
-var head = document.getElementsByTagName('head')[0];
-
-var script = document.createElement('script');
-
-
-// ----------------------
-
-script.src = 'story_content/WebObjects/1/1.js';
-
-// ----------------------
-                  
-script.type = 'text/javascript';
-
-head.appendChild(script)
-
-// alert("Slide 2");
-}
-
-function Script12()
-{
-  // iSL1 to load eJS1 my_functions.js during project start (a simlar iSL2 loads eJS2)
-// SL Trigger to call External JS file called my_functions.js
-// Initially this js file is in the developer folde for the project under resources.
-// To link the js to SL, use Web Object insert pointing out to ....
-// Then publish the project to create the Contents 
-// After that adjust the path of the newly copied js file in the below line
-
- // alert("Slide 1");
-
-var head = document.getElementsByTagName('head')[0];
-
-var script = document.createElement('script');
-
-
-// ----------------------
-
-script.src = 'story_content/WebObjects/1/1.js';
-
-// ----------------------
-                  
-script.type = 'text/javascript';
-
-head.appendChild(script)
-
-// alert("Slide 2");
-}
-
 function Script13()
+{
+  // iSL1 to load eJS1 my_functions.js during project start (a simlar iSL2 loads eJS2)
+// SL Trigger to call External JS file called my_functions.js
+// Initially this js file is in the developer folde for the project under resources.
+// To link the js to SL, use Web Object insert pointing out to ....
+// Then publish the project to create the Contents 
+// After that adjust the path of the newly copied js file in the below line
+
+ // alert("Slide 1");
+
+var head = document.getElementsByTagName('head')[0];
+
+var script = document.createElement('script');
+
+
+// ----------------------
+
+script.src = 'story_content/WebObjects/1/1.js';
+
+// ----------------------
+                  
+script.type = 'text/javascript';
+
+head.appendChild(script)
+
+// alert("Slide 2");
+}
+
+function Script14()
+{
+  // iSL1 to load eJS1 my_functions.js during project start (a simlar iSL2 loads eJS2)
+// SL Trigger to call External JS file called my_functions.js
+// Initially this js file is in the developer folde for the project under resources.
+// To link the js to SL, use Web Object insert pointing out to ....
+// Then publish the project to create the Contents 
+// After that adjust the path of the newly copied js file in the below line
+
+ // alert("Slide 1");
+
+var head = document.getElementsByTagName('head')[0];
+
+var script = document.createElement('script');
+
+
+// ----------------------
+
+script.src = 'story_content/WebObjects/1/1.js';
+
+// ----------------------
+                  
+script.type = 'text/javascript';
+
+head.appendChild(script)
+
+// alert("Slide 2");
+}
+
+function Script15()
 {
   // iSL1 to load eJS1 my_functions.js during project start (a simlar iSL2 loads eJS2)
 // SL Trigger to call External JS file called my_functions.js
@@ -284,7 +300,7 @@ head.appendChild(script)
 // alert("Slide 2");
 }
 
-function Script14()
+function Script16()
 {
   // iSL1 to load eJS1 my_functions.js during project start (a simlar iSL2 loads eJS2)
 // SL Trigger to call External JS file called my_functions.js
