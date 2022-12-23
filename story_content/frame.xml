@@ -13,7 +13,7 @@
         <options>
           <option name="title_enabled" value="false">
             <options>
-              <option name="title_text" value="Eng Vocab with Summary" />
+              <option name="title_text" value="Vocaby G11 T3 U1-4" />
             </options>
           </option>
           <option name="logo_enabled" value="false">
@@ -78,7 +78,7 @@
       </optiongroup>
       <optiongroup name="bottombaroptions">
         <options>
-          <option name="bottombar_enabled" value="true" />
+          <option name="bottombar_enabled" value="false" />
         </options>
       </optiongroup>
     </optiongroups>
@@ -1281,7 +1281,6 @@
         <slidelink slideid="_player.6NjQw9KKOGv" displaytext="Untitled Scene" expand="true" type="slide">
           <links>
             <slidelink slideid="_player.6NjQw9KKOGv.6TwjiuvbUli" displaytext=" Minue" expand="false" type="slide" />
-            <slidelink slideid="_player.6NjQw9KKOGv.6ALIqlLKDNl" displaytext="Untitled Slide" expand="false" type="slide" />
           </links>
         </slidelink>
       </links>

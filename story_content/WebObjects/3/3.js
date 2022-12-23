@@ -1,0 +1,540 @@
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Grade 11 Term 2 Unit 3 Words 432
+
+var Listen =function(){
+	
+// Odd = Engligh question, next Even = Arabic answer;
+// random is even for arabic answer;
+
+// Three items to change: 1) Function name on the first line, variable Words (number of rows in the excel file) and the the data base. Both are noted by //========================================= 
+
+var player = GetPlayer();
+
+//=========================================
+var Words = 432 ; 
+//=========================================
+
+
+
+var arr = [];
+while(arr.length < 8)
+{
+    var r = Math.floor(Math.random()*Words+1)*2;
+    if(arr.indexOf(r) === -1) arr.push(r);
+}
+
+
+var NumA=  arr[1];
+var NumA1= arr[2];
+var NumA2= arr[3];
+var NumA3= arr[4];
+var NumA4= arr[5];
+
+
+
+var Words= [
+"Free Answer for You",
+
+//=========================================
+
+"قدرة","Ability",
+"قادر","able",
+"حادثة","accident",
+"في الواقع","actually",
+"يضيف","add",
+"مزايا","advantages",
+"النصيحة","advice",
+"بعد ذلك","after-thoughts",
+"منذ","ago",
+"بلا هدف","aimless",
+"مطار","airplane",
+"الطائرات","airplanes",
+"مطار","airport",
+"على حد سواء","alike",
+"الكل","all",
+"مخصص","allowance",
+"بصوت عال","aloud",
+"سابقا","already",
+"الأمريكتين","Americas",
+"من بين","among",
+"اخر","another",
+"مضاد حيوي","antibiotic",
+"هندسة معمارية","architecture",
+"ترتيبها","arranged",
+"محام","attorne",
+"افي","ave",
+"تجنب","avoid",
+"تجنب","avoided",
+"جوائز","awards",
+"بعيد","away",
+"أكياس","bags",
+"شريط","Bar",
+"قاعدة","base",
+"شاطئ بحر","beach",
+"يصبح","become",
+"يبدأ","begin",
+"خلف","behind",
+"يصدق","believe",
+"مشروع قانون","bill",
+"يستعير","borrow",
+"اقترضت، استعارت","borrowed",
+"رئيس","boss",
+"زجاجة","bottle",
+"مُشترى","bought",
+"فترة راحة","break",
+"كسر","breaking",
+"عمليه التنفس","breathing",
+"حطم","broke",
+"جلبت","brought",
+"مصباح","bulb",
+"اصطدمت","bumped",
+"الشموع","candles",
+"معلبة","canned",
+"رعاية","care",
+"مسار مهني مسار وظيفي","career",
+"حذر","careful",
+"حمل","carried",
+"احتفل","celebrate",
+"الاحتفال","celebrating",
+"مراسم","ceremony",
+"تغير","Changed",
+"الاعمال الخيرية","charity",
+"جدول","chart",
+"تدقيق","checking",
+"الأطفال","children",
+"أختر","choose",
+"cky","cky",
+"صف دراسي","class",
+"تنظيف","cleaning",
+"كلية","college",
+"عمود","COLUMN",
+"الأعمدة","columns",
+"تجاري","commercial",
+"شائع","common",
+"يقارن","Compare",
+"اكتمال","complete",
+"استيعاب","Comprehension",
+"أجهزة الكمبيوتر","computers",
+"الشرط","Conditional",
+"تؤكد","confirm",
+"مشوش","Confused",
+"الالتباس","confusion",
+"باستمرار","constantly",
+"اتصل","contact",
+"سياق الكلام","Context",
+"القارات","continents",
+"محادثة","conversation",
+"مسار","course",
+"الإئتمان","credit",
+"اليومي","daily",
+"ديزي","Daisy",
+"عزيزي","Dear",
+"مقرر","decided",
+"الدرجة العلمية","degree",
+"صدمه خفيفه","dent",
+"مطعوجة","dented",
+"دمر","devastated",
+"المتقدمة","developed",
+"الماس","diamond",
+"مات","died",
+"بشكل مختلف","differently",
+"سلبيات","disadvantages",
+"اكتشف","discovered",
+"الاكتشافات","Discoveries",
+"يناقش","Discuss",
+"مناقشة","Discussion",
+"مسافات","distances",
+"انتهى","done",
+"يرتدي","dressed",
+"حفر","drilled",
+"سائق","driver",
+"قاد","drove",
+"خلال","during",
+"كل","each",
+"ابكر","earlier",
+"كهربائي","electric",
+"كهرباء","electricity",
+"آخر","else",
+"أحرجت","embarrassed",
+"إحراج","embarrassing",
+"توظيف","employ",
+"النهايات","endings",
+"محرك","engine-propelled",
+"استمتعت","enjoyed",
+"entir","entir",
+"بأكمله","entire",
+"ملكية","estate",
+"حتى في","even",
+"مساء","evening",
+"أي وقت مضى","ever",
+"امتحان","exam",
+"أمثلة","examples",
+"ممارسه الرياضه","exercise",
+"غالي","expensive",
+"شرح","explained",
+"التعبير","express",
+"تعبير","Expressing",
+"التعبير","expression",
+"التعبيرات","expressions",
+"الى ابعد حد","extremely",
+"سقط","fallen",
+"هبوط","falling",
+"مولع ب","fancy",
+"شعور","feel",
+"مشاعر","feelings",
+"قطعا","firmly",
+"طار","flew",
+"التالي","following",
+"نسي","forgotten",
+"شكل","form",
+"وجدت","found",
+"صداقة","Friendship",
+"أمامي","front",
+"قمامة","garbage",
+"ضوء الغاز","gaslights",
+"الغازولين","gasoline",
+"احصل على","get",
+"إعطاء","given",
+"درجات","grades",
+"ممتن","grateful",
+"يحمي","guard",
+"خمن","guess",
+"شعر","hair",
+"تسريحه شعر","hairstyle",
+"يحدث","happen",
+"حدث","Happened",
+"أكثر سعادة","happier",
+"أصعب","harder",
+"ثقيل","heavy",
+"الإرث","heirloom",
+"معاون، مساعد، مفيد، فاعل خير","helpful",
+"المساعدة","helping",
+"تاريخ","History",
+"خدعة","hoax",
+"صادق","Honest",
+"جرح","hurt",
+"افتراضية","Hypothetical",
+"الأفكار","ideas",
+"يتصور","Imagine",
+"غير ناضج","immature",
+"فورا","immediately",
+"الأهمية","important",
+"ساطع","incandescent",
+"في العلب","Incans",
+"بما فيها","including",
+"مستقل","independent",
+"الالتهابات","infections",
+"في داخل","inside",
+"أصر على","insisted",
+"إنترنت","Internet",
+"داخل","into",
+"تقديم","introduce",
+"أدخلت","introduced",
+"اخترع","invented",
+"اختراع","Invention",
+"اختراعات","inventions",
+"مدعو","invited",
+"الحكم","judging",
+"مفتاح","key",
+"عطوف","kind",
+"أنواع","kinds",
+"معروف","known",
+"لغة","Language",
+"الاخير","last",
+"متأخر","late",
+"في وقت لاحق","later",
+"تعلمت","learned",
+"غادر","leave",
+"اليسار","left",
+"أقرض","lent",
+"يترك","let",
+"رسالة","letter",
+"حروف","letters",
+"ضوء","light",
+"ليمو","limo",
+"ليموزين","limousine",
+"أسد","lion",
+"قائمة","list",
+"استمع","Listen",
+"استمع","listened",
+"الاستماع","Listening",
+"حمل","load",
+"الأحمال","loads",
+"معار","loaned",
+"قفل","lock",
+"مقفل","locked",
+"طويل","long",
+"ينظر","look",
+"يبحث","Looking",
+"ضائع","lost",
+"كثيرا","lot",
+"الكثير","lots",
+"المجلات","magazines",
+"مجمع تجاري","mall",
+"إدارة","management",
+"عديدة","many",
+"متزوج \ متزوجة","married",
+"تطابق","Match",
+"يمكن","maybe",
+"وجبة","meal",
+"تعني","mean",
+"رسالة","message",
+"قد","might",
+"ميل","mil",
+"مليونير","millionaire",
+"ملايين","millions",
+"عقل _ يمانع","mind",
+"مٌفتَقد","missed",
+"أخطاء","mistakes",
+"انتقل","moved",
+"رقبة","neck",
+"ضروري","needed",
+"الصحف","newspapers",
+"شمال","North",
+"لاحظت","noticed",
+"مناسبات","occasion",
+"عرض","offer",
+"مكتب","office",
+"ضابط","officer",
+"بترول","Oil",
+"على","onto",
+"فرص","opportunities",
+"خاصة","own",
+"حزم","packages",
+"دفع","paid",
+"زوج","Pair",
+"أزواج","pairs",
+"لباس نوم","pajamas",
+"الآباء","parents",
+"موقف سيارات","parking",
+"النعت","participle",
+"شريك","partner",
+"يمر","pass",
+"تم الاجتياز بنجاح","passed",
+"راكب","passenger",
+"ماضي","past",
+"البنسلين","penicillin",
+"في احسن الاحوال","perfect",
+"الإذن","Permission",
+"اختار","picked",
+"قطعة","piece",
+"مكان","place",
+"طائرة","plane",
+"جيب","pocket",
+"شرطة","police",
+"الاحتمالات","possibilities",
+"حاجة","practice",
+"مدح","praise",
+"مأزق","predicament",
+"الحالي","present",
+"مرموق","prestigious",
+"يدّعي","Pretend",
+"الأسعار","prices",
+"المحتمل","probably",
+"نطق","Pronunciation",
+"عام","public",
+"هدف","purpose",
+"أسئلة","questions",
+"الى حد كبير","quite",
+"مذياع","radio",
+"تمطر","rain",
+"بدلاً من","rather",
+"حقيقة","Real",
+"أدرك","realized",
+"هل حقا","really",
+"سبب","Reason",
+"استلمو","received",
+"اختزال","reduction",
+"حكم","referee",
+"ندم","regret",
+"يأسف","regrets",
+"تذكر","remembered",
+"توبيخ","reprimanding",
+"الطلبات","Requests",
+"المسؤوليات","responsibilities",
+"مطعم","Restaurant",
+"نتيجة","result",
+"إرجاع","return",
+"عاد","returned",
+"حقا","right",
+"دور اللعب","Role-play",
+"أدوار","roles",
+"مستدير","round",
+"طريق","route",
+"يركض","run",
+"هرع","rushed",
+"قال","said",
+"تم الحفظ","saved",
+"رأى","saw",
+"الأوشحة","scarves",
+"مقعد","seat",
+"الأمان","security",
+"رأيت","seen",
+"جمل","sentences",
+"جدي","serious",
+"تعيين","set",
+"شكل","shape",
+"شارك","share",
+"ساطع","shining",
+"السفن","ships",
+"أحذية","shoes",
+"التسوق","shopping",
+"تبين","show",
+"بسيط","Simple",
+"منذ","Since",
+"المواقع","sites",
+"الوضع","situation",
+"مواقف","situations",
+"مصادر","sources",
+"الينابيع","Springs",
+"بداية","start",
+"بدأت","started",
+"ما يزال","still",
+"قصة","story",
+"درس","studied",
+"نمط","style",
+"موضوعات","subject",
+"ناجح","successful",
+"فجأة","Suddenly",
+"الصيف","summer",
+"بالتأكيد","sure",
+"استطلاع","Survey",
+"تحول","switch",
+"تؤخذ","taken",
+"حديث","talk",
+"تتحدث","talking",
+"محادثات","talks",
+"فريق","team",
+"أقول","tell",
+"لص","thief",
+"فكر","thought",
+"ألف","thousand",
+"يرمي","threw",
+"تذكرة","ticket",
+"أخبر","told",
+"جدا","too",
+"أخذ","took",
+"معجون الأسنان","toothpaste",
+"عنوان","topic",
+"مجموع","total",
+"المرور","traffic",
+"قمامة، يدمر، يهدم","trash",
+"سافرت","traveled",
+"سفر","traveling",
+"رحلة قصيرة","trip",
+"مشكلة","trouble",
+"شاحنة","truck",
+"يثق","trust",
+"حقيقة","truth",
+"يحاول","try",
+"محاولة","trying",
+"يوم الثلاثاء","tuesday",
+"دور","Turn",
+"عادي","typical",
+"مظلة","umbrella",
+"تسطير","underline",
+"تفهم","understand",
+"وحدة","Unit",
+"التفريغ","unloading",
+"حتى","until",
+"منزعج","upset",
+"مفيد","useful",
+"استخدام","using",
+"ذو قيمة","valuable",
+"زار","visited",
+"كلمات","Vocabulary",
+"النادل","waiter",
+"مشى","walked",
+"المشي","walking",
+"محفظة جيب","wallet",
+"يريد","want",
+"مطلوب","wanted",
+"حرب","War",
+"راقب","watch",
+"طريق","way",
+"ثري","wealthy",
+"أسابيع","weeks",
+"نحن سوف","well",
+"ذهب","went",
+"عجلات","wheels",
+"سواء، ما اذا","whether",
+"واسع الانتشار","widespread",
+"فوز","win",
+"يتمنى","wish",
+"فاز - ربح","won",
+"عجب","wonder",
+"رائع","wonderful",
+"أتساءل","Wondering",
+"أسوأ","worst",
+"رايت","Wright",
+"ساعة اليد","wristwatch",
+"كاتب","writer",
+
+
+
+
+//=========================================
+
+];
+
+// Code to decide if the word in the quetion is Arabic or English. 
+// Question word is English. All answer words arein Arabic.
+
+var WordA = Words[NumA-1];
+var WordQ = Words[NumA];
+
+var WordA1 = Words[NumA1-1];
+var WordQ1 = Words[NumA1];
+
+var WordA2 = Words[NumA2-1];
+var WordQ2 = Words[NumA2];
+
+var WordA3 = Words[NumA3-1];
+var WordQ3 = Words[NumA3];
+
+var WordA4 = Words[NumA4-1];
+var WordQ4 = Words[NumA4];
+
+
+
+// Setting values to SL
+
+player.SetVar("NumA",NumA);
+player.SetVar("NumA1",NumA1);
+player.SetVar("NumA2",NumA2);
+player.SetVar("NumA3",NumA3);
+player.SetVar("NumA4",NumA4);
+
+player.SetVar("WordQ",WordQ);
+player.SetVar("WordQ1",WordQ1);
+player.SetVar("WordQ2",WordQ2);
+player.SetVar("WordQ3",WordQ3);
+player.SetVar("WordQ4",WordQ4);
+
+
+player.SetVar("WordA",WordA);
+player.SetVar("WordA1",WordA1);
+player.SetVar("WordA2",WordA2);
+player.SetVar("WordA3",WordA3);
+player.SetVar("WordA4",WordA4);
+
+			
+}
+
+
+// Code to say the English word in the Question
+var Say =function(){
+// var MyText = "What is the meaning of?" + WordQ ;	 
+
+var player = GetPlayer();
+var WordQ = player.GetVar("WordQ");
+
+var MyText = WordQ ;	 
+
+		
+let utterance = new SpeechSynthesisUtterance(MyText);
+ speechSynthesis.speak(utterance);	
+ }
