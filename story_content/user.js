@@ -2,59 +2,62 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "66am31uekD8":
+      case "69xilY5Pq6M":
         Script1();
         break;
-      case "5asoAH4J2Kd":
+      case "6b2pxhDW6sM":
         Script2();
         break;
-      case "6bvYVkRrHjI":
+      case "65RdEk2eiQE":
         Script3();
         break;
-      case "5ebloQshYBe":
+      case "6n70dqcRRmf":
         Script4();
         break;
-      case "5jeXKHrljCy":
+      case "5zJ5I38SCeK":
         Script5();
         break;
-      case "5f9dx295wUi":
+      case "61He8sTNpTp":
         Script6();
         break;
-      case "6iiAmt1ke05":
+      case "61amHeOrDYH":
         Script7();
         break;
-      case "65oSNX5MUJy":
+      case "6r6jzSnp0jk":
         Script8();
         break;
-      case "5aCEW341zj9":
+      case "5i4dJvg2gCl":
         Script9();
         break;
-      case "6g87P40AihO":
+      case "6daHzOqAFsT":
         Script10();
         break;
-      case "6SqAy4xtEq7":
+      case "5jElSIF5xzu":
         Script11();
         break;
-      case "5cGh2sHqS8x":
+      case "6AApLO6w5rD":
         Script12();
         break;
-      case "6gEu4hrVIA8":
+      case "6SVBrHtFZel":
         Script13();
         break;
-      case "6OCUoT4MS5w":
+      case "6X9LztM0eaW":
         Script14();
         break;
-      case "5n1RMpZ4xgl":
+      case "6eeEyFdh58P":
         Script15();
         break;
-      case "6fz4oeDqfKe":
+      case "6bQYAYs0WDS":
         Script16();
         break;
-      case "5VILc8OZfn5":
+      case "6k4FxM9K2kT":
         Script17();
         break;
-      case "6ATj5N1g5xX":
+      case "6ld3JxY8kU8":
         Script18();
+        break;
+      case "5zSAcLJNhD6":
+        Script19();
         break;
   }
 }
@@ -211,31 +214,11 @@ fetch(url,{
 
 function Script11()
 {
-  // iSL1 to load eJS1 my_functions.js during project start (a simlar iSL2 loads eJS2)
-// SL Trigger to call External JS file called my_functions.js
-// Initially this js file is in the developer folde for the project under resources.
-// To link the js to SL, use Web Object insert pointing out to ....
-// Then publish the project to create the Contents 
-// After that adjust the path of the newly copied js file in the below line
-
- // alert("Slide 1");
-
-var head = document.getElementsByTagName('head')[0];
-
-var script = document.createElement('script');
-
-
-// ----------------------
-
-script.src = 'story_content/WebObjects/1/1.js';
-
-// ----------------------
-                  
-script.type = 'text/javascript';
-
-head.appendChild(script)
-
-// alert("Slide 2");
+  
+var player = GetPlayer();
+var d = new Date();
+var datestring =  (d.getMonth()+1) + "-" +  d.getDate() + "-" + d.getFullYear();
+player.SetVar ("Date",datestring);
 }
 
 function Script12()
@@ -285,7 +268,7 @@ var script = document.createElement('script');
 
 // ----------------------
 
-script.src = 'story_content/WebObjects/2/2.js';
+script.src = 'story_content/WebObjects/1/1.js';
 
 // ----------------------
                   
@@ -343,7 +326,7 @@ var script = document.createElement('script');
 
 // ----------------------
 
-script.src = 'story_content/WebObjects/3/3.js';
+script.src = 'story_content/WebObjects/2/2.js';
 
 // ----------------------
                   
@@ -401,7 +384,7 @@ var script = document.createElement('script');
 
 // ----------------------
 
-script.src = 'story_content/WebObjects/4/4.js';
+script.src = 'story_content/WebObjects/3/3.js';
 
 // ----------------------
                   
@@ -413,6 +396,35 @@ head.appendChild(script)
 }
 
 function Script18()
+{
+  // iSL1 to load eJS1 my_functions.js during project start (a simlar iSL2 loads eJS2)
+// SL Trigger to call External JS file called my_functions.js
+// Initially this js file is in the developer folde for the project under resources.
+// To link the js to SL, use Web Object insert pointing out to ....
+// Then publish the project to create the Contents 
+// After that adjust the path of the newly copied js file in the below line
+
+ // alert("Slide 1");
+
+var head = document.getElementsByTagName('head')[0];
+
+var script = document.createElement('script');
+
+
+// ----------------------
+
+script.src = 'story_content/WebObjects/4/4.js';
+
+// ----------------------
+                  
+script.type = 'text/javascript';
+
+head.appendChild(script)
+
+// alert("Slide 2");
+}
+
+function Script19()
 {
   // iSL1 to load eJS1 my_functions.js during project start (a simlar iSL2 loads eJS2)
 // SL Trigger to call External JS file called my_functions.js
